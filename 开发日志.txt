@@ -1,0 +1,272 @@
+资料：
+1.C# 登录窗口代码
+http://wenku.baidu.com/link?url=N4bU81c3VdSZHk0IX7g9KRtclSM_psZT1iUKc2B33WDSQhynAHpq5nZLD_HPVD58-JmnrNgOOrcX_LhfFzqTWSj4IKhKuEzXtpNh5z9Fs9q
+2.注册界面
+http://zhidao.baidu.com/link?url=1aoK45VmieFCikQxkUl03bbw4MqWo863tOueDU2OVFVH5_xFXPLpfwsS6Ypso1qvxiFEZXxGYM-5rMUo0UwMka
+http://zhidao.baidu.com/link?url=SW7d85LJg4CX3NFmwpWO5uoo8yNIRxbwd37ve4ZhC7u-6e3q0AOT1iFjWa1IqnuzhMnKD_PkT-ktcmF_v1G0K_
+视频资料
+http://pan.baidu.com/share/home?uk=873282265#category/type=0
+与word的连接
+http://www.hnbc.info/export-word-report-c-source-code.html
+http://blog.csdn.net/eastmount/article/details/11235577
+创建新的word,打开文档 
+http://www.cnblogs.com/davyjiang/articles/1515167.html
+C#image和字节流的互化
+http://blog.csdn.net/educast/article/details/4409511
+C#图片格式转换
+http://www.2cto.com/kf/201007/52618.html
+http://hi.baidu.com/dreamflyman/item/c0a57716569ba4fd746a8461
+
+http://wenku.baidu.com/link?url=uDptLkC4NDSzlK-OaIKyUYb_Wja2v9xLdtOVqX-3RhKlVee-fpFkmZ92TOuagVeI64_oN2iWWx_bChsou7PfUcDtawPNOUM97iYbitzM6VS
+http://blog.sina.com.cn/s/blog_699e89df0100x44h.html
+
+demo下载地址：
+http://download.csdn.net/detail/kuledetong/1393406#comment
+
+注意：
+数据库名称：
+Project
+
+
+问题：
+1.建表时的表名不能为User,可能为保留名
+2.窗口之间传递值，用静态变量 http://blog.sina.com.cn/s/blog_75a3b9840100r3dm.html
+3.Choose窗口涉及的问题： 多选控件选择 1.ListView 2.TreeView 3.CheckListBox
+  问题：1,2如何实现多选？？？
+  http://blog.csdn.net/liangxianly/article/details/8783172
+4.Interop type 'Microsoft.Office.Interop.Execl.Application' cannot be embedded
+  解决方法:http://hi.baidu.com/zhangdinet/item/58199120c41dd70472863ee7
+5.显示选中项的值
+  http://www.cnblogs.com/liany/archive/2010/01/13/1646243.html
+6.获取dataGridView选中行的值
+  http://blog.csdn.net/andrew_wx/article/details/6546979
+
+
+进度：
+5/8：已完成：登录，注册功能
+     待攻克的内容：与word的连接
+5/9:已完成：word生成
+5/10:已完成：题目录入模块初步界面及操作
+           数据库模式初步设计
+     待攻克的内容：界面美化（林，廖）
+                   组装卷子（袁）http://wenku.baidu.com/link?url=0u4cIKNGZksNKpqnsQdwADO4sfxb001NPCtF7LByyoiZzQduouNBWCbT3Q6W_4BqF69Ux-T7QjvatQBURWpGJGpamUa1H8uQ1batOmVhLBa
+5/12:已完成：题号label自动显示最新题号
+             DBHelper中函数用户调用connect(),disconnect()规定，该类中其他函数没有sqlConnection.Open()的权限
+             输入的题号应为label+1，输入错误要提示 
+             多个tabPage写到一个traverseTable()中
+             题库管理模块界面设计以及showDataset()函数
+     待完成：
+             开始查询按钮点击代码逻辑要改！！！
+             dataGridView控件操作实现,有没有必要用该控件
+             建表到数据库中然后测试traverseTable()
+             录入题目基本功能已实现，仿照选择题，将填空题，判断题，简单题做完整
+             题库管理->:修改+删除代码实现
+             生成卷子以及组装卷子
+     注意：功能模块改变：基本录入，word作为一种新的录入题目方法，只是没存到数据库中
+5/12:
+     已完成：关联datagridview与datatable
+5/14:
+     已完成：删除，更新操作
+     待完成：与数据库相关的变量所放位置完全要改= =
+     任务分配：廖：界面美化
+               林：界面美化，把选择题之外的录入和修改，删除实现（代码参考选择）
+               袁：研究c#连接word
+         
+5/16:
+     下周老师要抽查！！！
+     已完成：插入题目方式之二：以word方式新建
+     待完成：廖：主要任务：熟悉C#，界面美化，各主要控件小demo实现
+                 备注：学习C#主要控件的功能及其属性，和实现方法
+                       参考网上资料或图书馆借书来看。
+                       winform程序界面相比网页等非常丑！所以界面美工不是很容易的ps等，所以还是要学。
+                 deadline：周一5月19号！！！
+
+             林：主要任务：熟悉C#，考虑界面布局，实现完成除了选择题的界面录入题目功能,了解linq连接数据库的方法(c#课学过）
+                 备注：虽然也是界面，但是侧重点不同，你需要研究如何将窗体大小固定；窗体框上的
+                       缩小建，放大建，关闭按钮如何按需消除，窗体显示时固定在某一处，以及最重要的
+                       界面上怎么安排控件更加合理美观
+                       录入题目功能具体代码实现可参考选择题的实现
+                 deadline：周一5月19号！！！
+
+             袁：主要任务：熟悉C#，组合试卷及小demo
+                 备注：5/14分配的任务：关于c#连接word，生成word已经搞定！
+                       目前任务是组合试卷，我也没想好如何组合，通过什么方法组合，所以你可以自己
+                       决定，然后大家商量，确定最终方案。
+                 deadline：周一5月19号！！！   
+
+5/17:
+    已完成：使用OpenFileDialog控件打开文件进行编辑删除
+5/19:
+    已完成：update,delete时的datagridview更新
+            注意：可以选择dataGridView控件的selectionMode为全选
+                
+5/21:
+    已完成：MakePaper模块部分功能
+    待完成：
+            1.为什么datagridview中切换有点问题，但是UDTiku却没问题？？？
+            2.接下来主要攻克将题目的一些内容字段存到word中
+              参考网址：http://blog.csdn.net/wudi626/article/details/2337857
+            3.dataGridView补充：http://blog.csdn.net/eastmount/article/details/11394907
+
+5/22:
+    已完成：5/21问题1解决
+    待完成：1.多个条件的搜索
+            2.不能重复选择相同题目的约束
+            3.学生类AnalyzePaper模块的编写  
+            4.不应该新建一个类，应该存到一张表里，教师写，学生读
+
+5/23:
+    已完成：1.MakePaperTest中通过Paper类将值插入到paper表中，从而生成一套卷子各题型的题号
+            2.MakePaperTest加约束：每种类型的题目只能选择规定数目的题目
+                                   总共选择的题目只能是23道，多了不能选择
+              -------------------> 就保证条件1，条件2就自动满足了
+    待完成：1.MakePaperTest加约束：避免插入相同的题目
+            2.paper表中加了一字段id的处理 
+              DBHelper类中的queryPaperTableByNumbers()函数
+              AnalyzePaper类中的button3_click()函数
+
+5/25:
+    反馈题目模块使用到的类之间的关系:
+                AnalyzePaper类中调用Paper类中的setAttributesOfTimu()方法设置属性
+                GetSimilarTimu类中调用Paper类中的getAttributesOfTimu()方法得到属性从而给出相似题目
+    待完成：1.AnalyzePaper类中6-12题
+            2.insert模块数据模式包括界面上属性的取值约束等全部搞定
+            3.表格模式的重新设计！！！添加分数，解答，点评
+         
+           两天搞定上面的
+           后面三天编写得到相似题目的sql部分
+           之后看连接word
+  
+           
+http://zhidao.baidu.com/link?url=64gi0QPfYwDeBn-RlMDZBzao6ER9dxy6xLXLLWpS_gZXQ104vGoFMwjEOzrRu1aYAsatnhpl1V6VSXOaUQZLhK
+
+5/30:
+    添加Log表
+    Administer窗口获得信息
+    UDTiku窗口中和数据库中该表进行交互
+    需要在登录时将信息传到用户类中
+
+    Update操作没有成功!!!
+    http://blog.sina.com.cn/s/blog_7e06dd2401018wot.html
+
+    注意:不要根据name查询到id，为了避免name相同情况，在注册时如果name重复，则不能添加该用户，保证name没有重复
+
+5/31:
+    UDTiku模块和MakePaperTest模块统一一下 
+    UDTiku模块中的更新操作
+
+6/2:update界面上取值约束
+    dataGridView中cell与表格的对应关系
+    加入insertLog()
+    
+    
+    UDTiku模块：
+    1.chapter1---初始值
+      chapter2---修改后的值
+      dataGridView中点击某条记录后得到chapter1等初始值
+      点击更新按钮后1.得到chapter2等修改后的值
+                    2.比较chapter1和chapter2等是否改变了
+      注意：两次连续点击更新按钮不会影响操作
+            chapter1,chapter2需要根据题目类型来区分
+    2.窗口关闭的代码
+      窗口大小设置
+      每个窗口加代码：
+        private void TMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("确认退出吗？", "注意", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+            if (result == DialogResult.Cancel)
+                e.Cancel = true;
+        }
+
+    
+
+6/7:
+    学生端只能先分析后相似
+
+http://wenku.baidu.com/link?url=fmGawyIEwNtR-gmYKfGQ13xkxWMWFmuyToM3rHUbuVKslaBDbsTxrbmi3xb3Sa_arMKFWPnyUnGET2QWUK72zA8vXhlZlF8FoTaQk0MMoQ3
+
+
+6/9:
+建了两张新表：tkRatio,xzRatio
+insert,update：
+GetSimilarTimu输入题目分数按了确定后根据该题的chapter,point,degree,
+若该point及degree不存在插入一条记录，如果分数为4则true++，如果分数为0则false++,同时修改ratio
+若该point及degree存在则update              
+
+ratio字段用什么 数据类型
+
+6/11:
+已完成：
+管理员模块：1.查看用户 删除用户     
+            2.查看各张表的更新删除记录->涉及到UDTiku中代码增加
+            dataGridView的删除 弹出对话框ifOk则删除并且dataGridView数据重新绑定
+题库管理多个条件的搜索参照组装卷子
+
+Form2 f = new Form2();
+f.Owner = this;
+f.Show()
+
+        
+6/13:
+最终任务分配：
+朱嘉文：整合所有代码，文档文字部分编写
+袁家豪：那段word代码看懂并且稍加修改合并到我们项目中，文档用EA画各种图，录入题目  
+        deadline:先画图再看代码；画图不超过2小时,周六完成
+                 录入题目周日做，在我电脑上录入
+林晟铭：界面美工 ，录入题目（帮忙）
+        注意：风格统一，字体一致，功能界面的字体不要用复古字体，看起来有点奇怪
+              按钮统一，用图片按钮
+              美工完一个窗体就发我下
+        deadline:今晚12点前！
+                 
+
+界面美工（林）    文档文字编写(我）         EA画图（袁）                  //并行
+   |                   |                       |
+   |                   |                       |
+                文档整合                    word模块 
+               （界面中的截图，EA画的图）          
+                代码整合
+               （原本代码优化，word模块合并）
+----------------------------------------------------------
+                     测试（廖）                                                         
+       
+
+
+
+
+我：学生修改密码
+
+界面：
+1.登录界面的三个按钮颜色难看
+2.注册界面的字不清晰
+3.TMain界面欢迎谁谁谁要特别表示
+4.录入题目界面选择题的字体大小和其他不一样啊
+5.窗体名字改掉
+6.返回等按钮风格统一
+7.学生端加一个修改密码，布局该成和教师统一的
+8.MakePaperTest中的Lable字体改
+
+ReadMe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

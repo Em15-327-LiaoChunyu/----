@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9B64D4D-A0C1-48E1-A8CC-D19BC2EF09F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="其他类\Administer.cs" />
+    <Compile Include="其他类\Paper.cs" />
+    <Compile Include="学生操作\AnalyzePaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生操作\AnalyzePaper.Designer.cs">
+      <DependentUpon>AnalyzePaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学生操作\GetSimilarTimu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生操作\GetSimilarTimu.Designer.cs">
+      <DependentUpon>GetSimilarTimu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学生操作\SMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生操作\SMain.Designer.cs">
+      <DependentUpon>SMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师操作\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师操作\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师操作\Choose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师操作\Choose.Designer.cs">
+      <DependentUpon>Choose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="其他类\ConstructWord.cs" />
+    <Compile Include="其他类\ConstructWordName.cs" />
+    <Compile Include="其他类\DBHelper.cs" />
+    <Compile Include="教师操作\InsertTiku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师操作\InsertTiku.Designer.cs">
+      <DependentUpon>InsertTiku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师操作\MakePaperTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师操作\MakePaperTest.Designer.cs">
+      <DependentUpon>MakePaperTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师操作\UDTiku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师操作\UDTiku.Designer.cs">
+      <DependentUpon>UDTiku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登录和注册\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="登录和注册\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师操作\MakePaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师操作\MakePaper.Designer.cs">
+      <DependentUpon>MakePaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学生操作\InputScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生操作\InputScore.Designer.cs">
+      <DependentUpon>InputScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师操作\TMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师操作\TMain.Designer.cs">
+      <DependentUpon>TMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登录和注册\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="登录和注册\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="其他类\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="其他类\User.cs" />
+    <Compile Include="管理员\Administer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\Administer.Designer.cs">
+      <DependentUpon>Administer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员\AMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员\AMain.Designer.cs">
+      <DependentUpon>AMain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="学生操作\AnalyzePaper.resx">
+      <DependentUpon>AnalyzePaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学生操作\GetSimilarTimu.resx">
+      <DependentUpon>GetSimilarTimu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学生操作\SMain.resx">
+      <DependentUpon>SMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师操作\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师操作\Choose.resx">
+      <DependentUpon>Choose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师操作\InsertTiku.resx">
+      <DependentUpon>InsertTiku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师操作\MakePaperTest.resx">
+      <DependentUpon>MakePaperTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师操作\UDTiku.resx">
+      <DependentUpon>UDTiku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录和注册\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师操作\MakePaper.resx">
+      <DependentUpon>MakePaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学生操作\InputScore.resx">
+      <DependentUpon>InputScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师操作\TMain.resx">
+      <DependentUpon>TMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录和注册\Login.zh-Hant.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录和注册\Login.zh.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录和注册\Login.zu-ZA.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录和注册\Login.zu.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录和注册\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="管理员\Administer.resx">
+      <DependentUpon>Administer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员\AMain.resx">
+      <DependentUpon>AMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
